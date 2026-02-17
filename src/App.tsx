@@ -1,10 +1,6 @@
-import { useState } from 'react'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>Hello World</div>
+    <div className="bg-red-100">Hello World</div>
   )
 }
 
