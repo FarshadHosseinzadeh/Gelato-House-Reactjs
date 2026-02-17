@@ -1,6 +1,10 @@
+import { Layout } from "./components/layout"
+
 function App() {
   return (
-    <div className="bg-red-100">جلاتو هاوس</div>
+    <Layout>
+          <div className="bg-red-100">جلاتو هاوس</div>
+    </Layout>  
   )
 }
 
