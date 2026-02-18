@@ -1,0 +1,9 @@
+import type { JSX, PropsWithChildren } from "react";
+
+const Container: React.FC<PropsWithChildren> = ({ children }): JSX.Element => {
+  return <div className="max-w-7xl mx-auto">{children}</div>;
+};
+
+Container.propTypes = {};
+
+export default Container;
