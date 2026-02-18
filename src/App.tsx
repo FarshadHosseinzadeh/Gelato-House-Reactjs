@@ -1,11 +1,12 @@
-import { Layout } from "./components/layout"
+import { Layout } from "./components/layout";
+import HomePage from "./components/pages/home";
 
 function App() {
   return (
     <Layout>
-          <div className="bg-red-100">جلاتو هاوس</div>
-    </Layout>  
-  )
+      <HomePage></HomePage>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
