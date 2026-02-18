@@ -5,6 +5,7 @@ export const Header: React.FC = () => {
     <header>
       <Button
         variant="contained"
+        color="secondary"
         onClick={() => {
           console.log("hello");
         }}
@@ -13,6 +14,7 @@ export const Header: React.FC = () => {
       </Button>
       <Button
         variant="outlined"
+        color="secondary"
         onClick={() => {
           console.log("hello");
         }}
@@ -21,6 +23,7 @@ export const Header: React.FC = () => {
       </Button>
       <Button
         variant="text"
+        color="primary"
         onClick={() => {
           console.log("hello");
         }}

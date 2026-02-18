@@ -9,17 +9,6 @@ type ButtonProps = {
 
 const buttonBaseStyles = "rounded-xl";
 
-const colors = {
-  primary: "bg-primary-500 text-primary-500",
-  secondary: "bg-secondary-500 text-secondary-500",
-};
-
-const sizes = {
-  small: "px-2 py-1 text-sm",
-  medium: "px-4 py-2 text-base",
-  large: "px-6 py-3text-large",
-};
-
 const variants = {
   contained: {
     primary: "bg-primary-500 text-white",
@@ -30,27 +19,27 @@ const variants = {
     secondary: "text-secondary-500 border border-secondary-500",
   },
   text: {
-    primary: "text-gray-950",
-    secondary: "bg-secondary-500 text-secondary-500",
+    primary: "text-gray-900",
+    secondary: "text-gray-900",
   },
+};
+
+const sizes = {
+  small: "px-2 py-1 text-sm",
+  medium: "px-4 py-2 text-base",
+  large: "px-6 py-3text-large",
 };
 
 export const Button: React.FC<ButtonProps> = ({
   variant = "contained",
   children,
   color = "secondary",
-  size = "large",
+  size = "small",
   ...props
 }): JSX.Element => {
   return (
     <button
-      className={clx(
-        buttonBaseStyles,
-        variants[variant][color],
-        colors[color],
-        sizes[size],
-        "text-white!",
-      )}
+      className={clx(buttonBaseStyles, variants[variant][color], sizes[size])}
       {...props}
     >
       {children}
@@ -59,7 +48,6 @@ export const Button: React.FC<ButtonProps> = ({
 };
 
 //component composition example
-
 //write a component
 //reusable
 //configurable
